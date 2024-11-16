@@ -1,38 +1,43 @@
-# Fase 5: Persistencia de Datos
+# Fase 6: Estilizado Final
 
 ## 📚 ¿Qué aprenderás en esta rama?
-- Usar Local Storage
-- Implementar hooks personalizados
-- Manejar persistencia de datos
-- Optimizar almacenamiento
+- Usar Tailwind CSS avanzado
+- Implementar diseño responsive
+- Crear animaciones y transiciones
+- Optimizar estilos
 
-## 💾 Persistencia con Local Storage
+## 🎨 Estilos y Componentes
 
-### Custom Hook: useTodos
+### Sistema de Diseño
+- Paleta de colores
+- Tipografía
+- Espaciado
+- Componentes UI
 
-```jsx
-const useTodos = () => {
-  const [todos, setTodos] = useState(() => {
-    return JSON.parse(localStorage.getItem('todos')) || []
-  })
+### Características
+- Diseño responsive
+- Modo oscuro
+- Animaciones
+- Accesibilidad
+
+## 🎯 Objetivos de Aprendizaje
+- [x] Dominar Tailwind CSS
+- [x] Implementar diseño responsive
+- [x] Crear animaciones fluidas
+- [x] Mantener consistencia visual
+
+## 💅 Personalización
+
+```css
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 bg-blue-500 text-white rounded;
+  }
 }
-```	
-🎯 Objetivos de Aprendizaje
-
- Implementar persistencia de datos
- Crear hooks personalizados
- Manejar errores de storage
- Optimizar operaciones de storage
-
-💡 Conceptos Clave
-
-Local Storage vs Session Storage
-JSON parsing y stringify
-Lazy initialization
-Error handling
+```
 
 ✅ Retos
 
-Implementa sincronización entre pestañas
-Añade límite de almacenamiento
-Crea backup automático
+Crea un tema personalizado
+Implementa modo oscuro
+Añade más animaciones
