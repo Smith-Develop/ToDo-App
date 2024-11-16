@@ -2,6 +2,8 @@
 
 Una aplicación de lista de tareas moderna y funcional construida con React y Tailwind CSS. Este proyecto está diseñado como una guía interactiva para aprender desarrollo web moderno.
 
+[![VISTA PREVIA](https://img.shields.io/badge/▶️_vISTA_PREVIA_DEL_PROYECTO-40AC83?style=for-the-badge)](https://smith-develop.github.io/ToDo-App/)
+
 ## 🚀 Características Principales
 
 - ✅ CRUD completo de tareas
