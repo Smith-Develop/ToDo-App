@@ -1,79 +1,41 @@
-# Fase 1: Configuración Inicial del Proyecto
+# Fase 2: Creación de Componentes
 
 ## 📚 ¿Qué aprenderás en esta rama?
-- Crear un proyecto React usando Vite
-- Configurar Tailwind CSS en un proyecto React
-- Estructurar carpetas de un proyecto profesional
-- Comandos básicos de Git
+- Crear componentes React funcionales
+- Implementar props y tipos de props
+- Estructurar componentes de manera eficiente
+- Usar Tailwind CSS para estilos
 
-## 🛠️ Configuración del Entorno
+## 🧩 Componentes a Crear
 
-### Requisitos Previos
-- Node.js instalado
-- Git instalado
-- Editor de código (VS Code recomendado)
+### TodoList
+- Contenedor principal de la aplicación
+- Manejo de lista de componentes hijos
+- Estilos de layout con Tailwind
 
-### Pasos
+### TodoItem
+- Representación de una tarea individual
+- Props para datos y eventos
+- Estilos condicionales
 
-1. Crear proyecto:
-```bash
-npm create vite@latest todo-app -- --template react
-cd todo-app
-npm install
-```
+### AddTodo
+- Formulario para nuevas tareas
+- Manejo de eventos de formulario
+- Validación básica de entrada
 
-Instalar Tailwind:
+## 🎯 Objetivos de Aprendizaje
+- [x] Comprender el concepto de componentes
+- [x] Manejar props entre componentes
+- [x] Implementar eventos básicos
+- [x] Usar Tailwind para estilos
 
-```bash
-npm install -D tailwindcss postcss autoprefixer
-npx tailwindcss init -p
-```
+## 💡 Mejores Prácticas
+- Nombres descriptivos para componentes
+- Componentización efectiva
+- Props typing
+- Reutilización de código
 
-2. Configurar Tailwind:
-
-- En `tailwind.config.js`:
-```javascript
-/** @type {import('tailwindcss').Config} */
-export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
-```
-
-📁 Estructura de Carpetas
-
-```bash
-├── src/  # Carpeta principal del proyecto
-├── assets/ # Recursos estáticos
-├── components/ # Componentes reutilizables - Que son?: Son componentes que se pueden reutilizar en diferentes partes de la aplicación
-├── hooks/ # Hooks personalizados - Que son?: Son funciones que nos permiten acceder a los estados de React
-├── context/ # Contextos - Que son?: Son componentes que nos permiten compartir información entre componentes sin necesidad de pasar props manualmente en cada nivel de la jerarquía
-|
-└── utils/ # Funciones útiles - Que son?: Son funciones que nos permiten realizar tareas específicas
-```
-
-🎯 Objetivos de Aprendizaje
-
- Entender la estructura básica de un proyecto React
- Conocer el sistema de módulos de JavaScript
- Aprender a configurar un proyecto desde cero
- Dominar los comandos básicos de Git
-
-🤔 Conceptos Clave
-
-Vite como herramienta de desarrollo
-Sistema de módulos ES6
-Configuración de Tailwind
-Estructura de proyectos React
-
-✅ Retos
-
-Modifica el archivo tailwind.config.js para añadir colores personalizados
-Crea una estructura de carpetas alternativa
-Inicializa un nuevo repositorio Git
+## ✅ Retos
+1. Crea un componente para filtrar tareas
+2. Implementa un componente de estadísticas
+3. Añade validación de props
