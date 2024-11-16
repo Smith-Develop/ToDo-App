@@ -1,40 +1,38 @@
-# Fase 4: Operaciones CRUD
+# Fase 5: Persistencia de Datos
 
 ## 📚 ¿Qué aprenderás en esta rama?
-- Implementar operaciones Create, Read, Update, Delete
-- Manejar datos en memoria
-- Actualizar estado de manera inmutable
-- Optimizar operaciones
+- Usar Local Storage
+- Implementar hooks personalizados
+- Manejar persistencia de datos
+- Optimizar almacenamiento
 
-## 🔄 Operaciones CRUD
+## 💾 Persistencia con Local Storage
 
-### Create
-- Añadir nuevas tareas
-- Validación de entrada
-- Generación de IDs únicos
+### Custom Hook: useTodos
 
-### Read
-- Mostrar lista de tareas
-- Filtrar tareas
-- Ordenar tareas
+```jsx
+const useTodos = () => {
+  const [todos, setTodos] = useState(() => {
+    return JSON.parse(localStorage.getItem('todos')) || []
+  })
+}
+```	
+🎯 Objetivos de Aprendizaje
 
-### Update
-- Editar texto de tareas
-- Marcar como completadas
-- Actualizar propiedades
+ Implementar persistencia de datos
+ Crear hooks personalizados
+ Manejar errores de storage
+ Optimizar operaciones de storage
 
-### Delete
-- Eliminar tareas
-- Confirmar eliminación
-- Manejar estados posteriores
+💡 Conceptos Clave
 
-## 🎯 Objetivos de Aprendizaje
-- [x] Implementar operaciones CRUD completas
-- [x] Manejar estado de manera eficiente
-- [x] Crear funciones de utilidad
-- [x] Optimizar rendimiento
+Local Storage vs Session Storage
+JSON parsing y stringify
+Lazy initialization
+Error handling
 
-## ✅ Retos
-1. Implementa un sistema de papelera
-2. Añade función de duplicar tarea
-3. Crea un historial de cambios
+✅ Retos
+
+Implementa sincronización entre pestañas
+Añade límite de almacenamiento
+Crea backup automático

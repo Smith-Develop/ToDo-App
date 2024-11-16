@@ -2,35 +2,10 @@ import React, { useState } from 'react'
 import TodoList from './components/todolist/TodoList'
 import TodoItem  from './components/TodoItem/TodoItem'
 import AddTodo  from './components/AddTodo/AddTodo'
+import { useTodos } from './hooks/useTodos'
 
 function App() {
-  const [todos, setTodos] = useState([])
-
-  const addTodo = (text) => {
-    setTodos([
-      ...todos,
-      {
-        id: Date.now(),
-        text,
-        completed: false
-      }
-    ])
-  }
-  const editTodo = (id, newText) => {
-    setTodos(todos.map(todo =>
-      todo.id === id ? { ...todo, text: newText } : todo
-    ))
-  }
-
-  const toggleTodo = (id) => {
-    setTodos(todos.map(todo =>
-      todo.id === id ? { ...todo, completed: !todo.completed } : todo
-    ))
-  }
-
-  const deleteTodo = (id) => {
-    setTodos(todos.filter(todo => todo.id !== id))
-  }
+  const { todos, addTodo, toggleTodo, deleteTodo, editTodo } = useTodos()
 
   return (
     <div className="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
