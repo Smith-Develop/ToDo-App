@@ -1,41 +1,33 @@
-# Fase 2: Creación de Componentes
+# Fase 3: Manejo de Estado
 
 ## 📚 ¿Qué aprenderás en esta rama?
-- Crear componentes React funcionales
-- Implementar props y tipos de props
-- Estructurar componentes de manera eficiente
-- Usar Tailwind CSS para estilos
+- Usar el Hook useState
+- Manejar estado en componentes
+- Pasar estado entre componentes
+- Implementar actualizaciones de estado
 
-## 🧩 Componentes a Crear
+## 🔄 Estado en React
 
-### TodoList
-- Contenedor principal de la aplicación
-- Manejo de lista de componentes hijos
-- Estilos de layout con Tailwind
-
-### TodoItem
-- Representación de una tarea individual
-- Props para datos y eventos
-- Estilos condicionales
-
-### AddTodo
-- Formulario para nuevas tareas
-- Manejo de eventos de formulario
-- Validación básica de entrada
+### Conceptos Principales
+- Estado local vs global
+- Inmutabilidad
+- Actualizaciones de estado
+- Props drilling
 
 ## 🎯 Objetivos de Aprendizaje
-- [x] Comprender el concepto de componentes
-- [x] Manejar props entre componentes
-- [x] Implementar eventos básicos
-- [x] Usar Tailwind para estilos
+- [x] Comprender el ciclo de vida del estado
+- [x] Manejar actualizaciones de estado
+- [x] Implementar patrones de lifting state up
+- [x] Evitar problemas comunes de estado
 
-## 💡 Mejores Prácticas
-- Nombres descriptivos para componentes
-- Componentización efectiva
-- Props typing
-- Reutilización de código
+## 💻 Implementaciones
+```jsx
+const [todos, setTodos] = useState([])
+const [newTodo, setNewTodo] = useState('')
+```
 
-## ✅ Retos
-1. Crea un componente para filtrar tareas
-2. Implementa un componente de estadísticas
-3. Añade validación de props
+✅ Retos
+
+Implementa un estado para filtros
+Crea un estado para modo oscuro
+Maneja estado para edición de tareas
