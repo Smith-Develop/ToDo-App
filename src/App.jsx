@@ -16,6 +16,11 @@ function App() {
       }
     ])
   }
+  const editTodo = (id, newText) => {
+    setTodos(todos.map(todo =>
+      todo.id === id ? { ...todo, text: newText } : todo
+    ))
+  }
 
   const toggleTodo = (id) => {
     setTodos(todos.map(todo =>
@@ -39,11 +44,12 @@ function App() {
             <TodoList>
               {todos.map(todo => (
                 <TodoItem
-                  key={todo.id}
-                  todo={todo}
-                  onToggle={toggleTodo}
-                  onDelete={deleteTodo}
-                />
+                key={todo.id}
+                todo={todo}
+                onToggle={toggleTodo}
+                onDelete={deleteTodo}
+                onEdit={editTodo}
+              />
               ))}
             </TodoList>
           </div>

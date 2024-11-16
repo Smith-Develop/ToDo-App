@@ -1,33 +1,40 @@
-# Fase 3: Manejo de Estado
+# Fase 4: Operaciones CRUD
 
 ## 📚 ¿Qué aprenderás en esta rama?
-- Usar el Hook useState
-- Manejar estado en componentes
-- Pasar estado entre componentes
-- Implementar actualizaciones de estado
+- Implementar operaciones Create, Read, Update, Delete
+- Manejar datos en memoria
+- Actualizar estado de manera inmutable
+- Optimizar operaciones
 
-## 🔄 Estado en React
+## 🔄 Operaciones CRUD
 
-### Conceptos Principales
-- Estado local vs global
-- Inmutabilidad
-- Actualizaciones de estado
-- Props drilling
+### Create
+- Añadir nuevas tareas
+- Validación de entrada
+- Generación de IDs únicos
+
+### Read
+- Mostrar lista de tareas
+- Filtrar tareas
+- Ordenar tareas
+
+### Update
+- Editar texto de tareas
+- Marcar como completadas
+- Actualizar propiedades
+
+### Delete
+- Eliminar tareas
+- Confirmar eliminación
+- Manejar estados posteriores
 
 ## 🎯 Objetivos de Aprendizaje
-- [x] Comprender el ciclo de vida del estado
-- [x] Manejar actualizaciones de estado
-- [x] Implementar patrones de lifting state up
-- [x] Evitar problemas comunes de estado
+- [x] Implementar operaciones CRUD completas
+- [x] Manejar estado de manera eficiente
+- [x] Crear funciones de utilidad
+- [x] Optimizar rendimiento
 
-## 💻 Implementaciones
-```jsx
-const [todos, setTodos] = useState([])
-const [newTodo, setNewTodo] = useState('')
-```
-
-✅ Retos
-
-Implementa un estado para filtros
-Crea un estado para modo oscuro
-Maneja estado para edición de tareas
+## ✅ Retos
+1. Implementa un sistema de papelera
+2. Añade función de duplicar tarea
+3. Crea un historial de cambios
